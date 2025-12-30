@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>Orbital Eden: Där Lyxen Möter Kosmos </title>
-<h1>Den Rymdiska hotell</h1>
+    <title>Orbital Eden | Beyond Atmosphere</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div>
-<h2>Priset </h2>
 
+    <div class="space-background"></div>
 
-</div>
+    <main class="hero">
+        <h1 class="headline">Tid är den ultimata <br><span class="italic-serif">lyxen.</span></h1>
+        <p class="sub-text">Välkommen till stillheten ovanför molnen.</p>
+    </main>
+
+    <nav class="orbital-nav">
+        <ul class="nav-list">
+            <li><a href="" class="nav-link active">INDEX</a></li>
+            <li class="separator">•</li>
+            <li><a href="" class="nav-link">SVITER</a></li>
+            <li class="separator">•</li>
+            <li><a href="" class="nav-link highlight">BOKNING</a></li> <li class="separator">•</li>
+            <li><a href="" class="nav-link">KONTAKT</a></li>
+        </ul>
+    </nav>
+
 </body>
 </html>
