@@ -1,0 +1,62 @@
+/* Grundinställningar */
+body {
+    background-color: #ffffff; /* Vit bakgrund */
+    color: #000000;            /* Svart text */
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace; /* Tech-känsla */
+}
+
+/* --- NAVIGATIONEN (HEADER) --- */
+header {
+    /* Layout */
+    display: flex;
+    justify-content: center; /* Detta centrerar menyn i mitten */
+    align-items: center;     /* Centrerar i höjdled */
+    
+    height: 80px;            /* Höjd på nav-baren */
+    position: relative;      /* Viktigt för att loggan ska kunna placeras */
+    
+    /* DEN SVARTA LINJEN */
+    border-bottom: 2px solid #000000; 
+}
+
+/* --- LOGOTYPEN --- */
+.logo {
+    position: absolute;      /* Låser fast loggan... */
+    left: 40px;              /* ...40px från vänsterkanten */
+    
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: -1px;
+    cursor: default;
+}
+
+/* --- MENY-LÄNKARNA --- */
+nav {
+    display: flex;
+    gap: 30px;               /* Avstånd mellan orden */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 16px;       /* Luft inuti knappen */
+    border: 1px solid transparent; /* Osynlig ram från början */
+    transition: all 0.2s ease;     /* Mjuk animation */
+}
+
+/* Hover-effekt (När du håller musen över) */
+nav a:hover {
+    color: #00a82d;          /* Tech-grön text */
+    border: 1px solid #00a82d; /* Grön ram */
+    background-color: #f0fff4; /* Mycket svag grön bakgrund */
+    box-shadow: 0 0 5px rgba(0, 168, 45, 0.2); /* Litet glow */
+}
+
+/* Active-effekt (När du klickar) */
+nav a:active {
+    background-color: #00a82d;
+    color: #ffffff;
+}
