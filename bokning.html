@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Orbital Eden - Bokning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO: ORBITAL EDEN</div>
+        <nav>
+            <a href="index.html">INDEX</a>
+            <a href="bokning.html">BOKNING</a>
+            <a href="kontakt.html">KONTAKT</a>
+        </nav>
+        <button class="btn-top">BOKA NU</button>
+    </header>
+
+    <main>
+        <h1>BOKA DIN RESA</h1>
+        <div class="grid-container">
+            <div class="card">
+                <div class="image-placeholder"></div>
+                <div class="card-content">
+                    <h3>01. TIDPUNKT</h3>
+                    <hr>
+                    <div class="input-group">
+                        <label>INCHECKNING</label>
+                        <input type="date">
+                    </div>
+                    <div class="input-group">
+                        <label>UTCHECKNING</label>
+                        <input type="date">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-placeholder"></div>
+                <div class="card-content">
+                    <h3>02. PERSONUPPGIFTER</h3>
+                    <hr>
+                    <div class="input-group">
+                        <label>NAMN PÅ RESENÄR</label>
+                        <input type="text" placeholder="Fullständigt namn">
+                    </div>
+                    <div class="input-group">
+                        <label>ÅLDER (ÅR)</label>
+                        <input type="number" 
+                               id="ageInput" 
+                               min="18" 
+                               max="120" 
+                               placeholder="Min. 18"
+                               oninput="if(this.value.length > 3) this.value = this.value.slice(0,3);">
+                    </div>
+                    <button class="btn-black">SLUTFÖR BOKNING</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Extra säkerhet: Hindrar användaren från att skriva in mer än 120 manuellt
+        document.getElementById('ageInput').addEventListener('blur', function() {
+            if (this.value > 120) this.value = 120;
+            if (this.value < 18 && this.value !== "") this.value = 18;
+        });
+    </script>
+</body>
+</html>
